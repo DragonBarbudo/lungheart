@@ -1,0 +1,244 @@
+@import '../dw4/_dw4';
+
+/* WIDTHS */
+@containerWidth: 1200px;
+@containerWidthTablet : 720px;
+@gutterWidth: 10px;
+/* COLORS */
+@b:   #666666;
+@w:   #f5f5f5;
+@g:    #9D9C9C;
+@main:    #2F4368;
+@sec:     #A44540;
+
+/* FONTS */
+
+.font{ font-family: 'Lato', sans-serif; }
+
+/* -----------  */
+
+body{
+  .font;
+}
+
+
+
+.icon{
+  border: 1px solid @g;
+  background: fade(#fff, 50%);
+  .border-radius(50%);
+  color:@g;
+  width: 60px; height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3.6;
+  &.small{
+    width: 38px; height: 38px;
+    display: inline-block;
+  }
+}
+
+.link{
+  color:@sec;
+  font-weight: 300;
+  font-size: 1.2em;
+  .icon{border-color:@sec; line-height: 1.8;color:@sec;}
+  .text{display: inline; margin-left: 10px;}
+  &:hover{
+    color:@main;
+    .icon{border-color:@main; color:@main;}
+  }
+}
+
+
+
+html, body{ height: 100%; }
+
+section#intro{
+  height: 100%;
+  .background-image(linear-gradient(#fff, #efefef));
+
+  .logo{
+    margin-top: 15%;
+  }
+  .entrar{
+    margin-top: 8%;
+    a{
+      display: inline-block;
+      color:@g;
+      font-weight: lighter;
+      .text{
+        margin-top: 10px;
+      }
+      &:hover{
+        color:@b;
+        .icon{color:@b;}
+      }
+    }
+  }
+
+}
+
+
+
+.topbar{
+  height: 60px;
+  .box-sizing(border-box);
+  padding-top: 16px;
+  .background-image(linear-gradient(#F3F3F3, fade(#F6F6F6, 50%)));
+  &.active{
+    position: fixed; left: 0; top: 0; width: 100%;
+  }
+  nav{
+    .fluid;
+    ul{
+      .container;
+      width: 100% !important;
+      li{
+        .c;
+        .tac;
+
+        a{
+          display: block;
+          font-size: 0.8em;
+          color:@g;
+          font-weight: lighter;
+          text-transform: uppercase;
+          border-right: 1px solid @w/1.1;
+          padding: 5px;
+          &:hover{
+            color:@b;
+          }
+          &.active{
+            color:@main;
+          }
+        }
+        &:last-child {a{ border:none; }}
+      }
+    }
+  }
+}
+
+
+.banner{
+  width: 100%;
+  height: 320px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &.banner-a{
+    background-image: url(img/banner-a.jpg);
+  }
+  .banner-logo{
+    position: absolute;
+    left: 0; right: 0; top: 35%; bottom: 35%;
+    background-image:url(img/lung-heart-imago.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+
+section.inner{
+  padding-top: 80px;
+  height: 100%;
+  h2{
+    font-size: 4em;
+    color:@g;
+    font-weight: 300;
+    padding: 40px 0;
+  }
+}
+
+section#inicio{
+  position: relative;
+  .bg1{
+    position: absolute; left: 10px; top: 0;
+    width: 30%; height: 367px;
+    background-image: url(img/home-lamp1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: -1;
+  }
+  .bg2{
+    position: absolute; right: 10px; top: 0;
+    width: 30%; height: 310px;
+    background-image: url(img/home-lamp2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    z-index: -1;
+  }
+  .bg3{
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 284px;
+    background-image: url(img/home-table.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    z-index: -1;
+  }
+  .sobre{
+    margin-top: 15%;
+    color:@g;
+    font-weight: lighter;
+    font-size: 2em;
+    p{margin-top: 20px;}
+    strong{
+      font-weight: 400;
+      color:@b;
+    }
+  }
+  .conoce{
+    margin-top: 5%;
+  }
+}
+
+
+section#especialidades{
+  .especs{
+    margin-top: 5%;
+  }
+  .icones{
+    height: 120px;
+      vertical-align: middle;;
+  }
+  .text{
+    color:@g;
+    font-weight: 300;
+    font-size: 1.4em;
+  }
+  .especs_second{
+    margin-top: 10%;
+    text-align: center;
+    .cirugia, .pediatria{
+      background-size: cover;
+      text-align: center;
+      color:@w;
+      padding: 50px 0;
+      h3{
+        font-size: 2em;
+        margin: 20px 0;
+      }
+      ul{
+        list-style: none;
+        li{
+          padding: 10px 0;
+          font-size: 1.3em;
+          font-weight: 300;
+        }
+      }
+    }
+    .cirugia{
+      background-image: url(img/cirugia.jpg);
+      background-position: -10px 0;
+    }
+    .pediatria{
+      background-image: url(img/pediatria.jpg);
+      background-position: 10px 0;
+    }
+  }
+}

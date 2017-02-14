@@ -1,0 +1,92 @@
+include _config.jade
+
++html5
+  +head('Lung & Heart | Centro Médico Especializado | Enfermedades Cardio - Pulmonares', 'Palabras clave', 'Descripción')
+  
+  body(ng-app="dw4")
+    
+    
+    
+    
+    section#intro
+      .container.logo
+        .c4.o4.g: h1: img(src="app/img/lung-heart.svg", alt="Lung & Heart").fluid
+    
+      .container.entrar
+        .c4.o4.tac
+          a(href="#inicio", du-smooth-scroll).tac
+            .icon: .fa.fa-angle-down
+            .text ENTRAR
+    
+    
+  
+    .topbar(sticky)
+      .container
+        .c4: a(href="#inicio", du-smooth-scroll): img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart")
+        .c8
+          +menu
+    
+    
+    section.inner#inicio
+      .bg1
+      .bg2
+      .bg3
+      .container.sobre.tac
+        .c4.o4: img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart").fluid
+        .c8.o2
+          p Centro Médico Especializado líder en el manejo del paciente con enfermedades <strong>Cardiacas</strong> y <strong>Respiratorias</strong>.
+      .container.conoce.tac
+        .c5.o1.g: +linkTo('Conóce nuestras especialidades', '#especialidades')
+        .c5.g: +linkTo('Identifica a nuestros médicos', '#nuestros-medicos')
+    
+    .banner.banner-a
+      .banner-logo
+    
+    
+    section.inner#especialidades
+      .container
+        .c10.o1.tac
+          h2 Especialidades
+        .c10.o1: .container.tac.especs
+          .c.espec
+            .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
+            .text Neumología
+          .c.espec
+            .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
+            .text Cardiología
+          .c.espec
+            .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
+            .text Angiología
+          .c.espec
+            .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
+            .text Broncología
+      .container.fluid.especs_second
+        .c6.cirugia
+          h3 CIRUGÍA
+          ul
+            li Vascular
+            li Torácica
+            li Cardiaca
+        .c6.pediatria
+          h3 PEDIATRÍA
+          ul
+            li Cardiopediatría
+            li Neumopediatría
+    
+    section.inner#nuestros-medicos
+      .container
+        .c10.o1.tac
+          h2 Nuestros médicos
+      
+    section.inner#nosotros  
+      .container
+        .c10.o1.tac
+          h2 Nosotros
+    
+    section.inner#agende-su-cita   
+      .container
+        .c10.o1.tac
+          h2 Agende su cita 
+
+  
+    +scripts
