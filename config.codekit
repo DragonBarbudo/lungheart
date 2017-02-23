@@ -75,6 +75,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/app\/img\/dr.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29935,
+		"inputAbbreviatedPath": "\/app\/img\/dr.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/dr.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/img\/home-lamp1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

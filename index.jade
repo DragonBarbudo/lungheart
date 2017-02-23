@@ -9,14 +9,15 @@ include _config.jade
     
     
     section#intro
-      .container.logo
-        .c4.o4.g: h1: img(src="app/img/lung-heart.svg", alt="Lung & Heart").fluid
-    
-      .container.entrar
-        .c4.o4.tac
-          a(href="#inicio", du-smooth-scroll).tac
-            .icon: .fa.fa-angle-down
-            .text ENTRAR
+      .container.middle
+          .c12: .container.logo
+            .c4.o4.g: h1: img(src="app/img/lung-heart.svg", alt="Lung & Heart").fluid
+        
+          .c12: .container.entrar
+            .c4.o4.tac
+              a(href="#inicio", du-smooth-scroll).tac
+                .icon: .fa.fa-angle-down
+                .text ENTRAR
     
     
   
@@ -31,62 +32,103 @@ include _config.jade
       .bg1
       .bg2
       .bg3
-      .container.sobre.tac
-        .c4.o4: img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart").fluid
-        .c8.o2
-          p Centro Médico Especializado líder en el manejo del paciente con enfermedades <strong>Cardiacas</strong> y <strong>Respiratorias</strong>.
-      .container.conoce.tac
-        .c5.o1.g: +linkTo('Conóce nuestras especialidades', '#especialidades')
-        .c5.g: +linkTo('Identifica a nuestros médicos', '#nuestros-medicos')
+      .container.middle
+        .c12
+          .container.sobre.tac
+            .c4.o4: img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart").fluid
+            .c8.o2
+              p Centro Médico Especializado líder en el manejo del paciente con enfermedades <strong>Cardiacas</strong> y <strong>Respiratorias</strong>.
+          .container.conoce.tac
+            .c5.o1.g: +linkTo('Conóce nuestras especialidades', '#especialidades')
+            .c5.g: +linkTo('Identifica a nuestros médicos', '#nuestros-medicos')
     
     .banner.banner-a
       .banner-logo
     
     
     section.inner#especialidades
-      .container
-        .c10.o1.tac
-          h2 Especialidades
-        .c10.o1: .container.tac.especs
-          .c.espec
-            .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
-            .text Neumología
-          .c.espec
-            .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
-            .text Cardiología
-          .c.espec
-            .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
-            .text Angiología
-          .c.espec
-            .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
-            .text Broncología
-      .container.fluid.especs_second
-        .c6.cirugia
-          h3 CIRUGÍA
-          ul
-            li Vascular
-            li Torácica
-            li Cardiaca
-        .c6.pediatria
-          h3 PEDIATRÍA
-          ul
-            li Cardiopediatría
-            li Neumopediatría
-    
+      .container.fluid.middle: .c12
+        .container: .c10.o1.tac: h2 Especialidades
+          .c10.o1: .container.tac.especs
+            .c3.espec
+              .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
+              .text Neumología
+            .c3.espec
+              .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
+              .text Cardiología
+            .c3.espec
+              .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
+              .text Angiología
+            .c3.espec
+              .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
+              .text Broncología
+        .container.fluid.especs_second
+          .c6.cirugia
+            h3 CIRUGÍA
+            ul
+              li Vascular
+              li Torácica
+              li Cardiaca
+          .c6.pediatria
+            h3 PEDIATRÍA
+            ul
+              li Cardiopediatría
+              li Neumopediatría
+      
     section.inner#nuestros-medicos
-      .container
-        .c10.o1.tac
-          h2 Nuestros médicos
+      .container.fluid: .c12
+        .container: .c10.o1.tac: h2 Nuestros médicos
+        .container
+          .c10.o1: .container
+            +card('app/img/dr.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dra. Silvia Cid Juárez', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Jhonatan Castillo', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Omar Baños', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Roberto Teodoro de Jesús', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Alejandro Fernández', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cirugía')
+            
+      
       
     section.inner#nosotros  
-      .container
-        .c10.o1.tac
-          h2 Nosotros
+      .container.fluid.middle: .c12
+        .container: .c10.o1.tac: h2 Nosotros 
+        
+        .container
+          .c2.o5: img(src="app/img/lung-heart-imago.svg", alt="Lung & Heart").fluid
+        .container.info
+          .c5.o1.g
+            .weare Somos un Centro Médico Especializado en Enfermedades Cardiológicas y Pulmonares
+          .c5.aboutus
+            p Todos nuestros integrantes médicos cuenta con Alta Especialidad para lograr la mejor atención de estos padecimientos, procurando la calidad de vida y funcionalidad de las actividades cotidianas de nuestros pacientes.
+            p Nuestra labor consiste en <strong>Diagnosticar</strong> y <strong>tratar</strong> enfermedades por medio de fármacos o quirúrgicamente, de acuerdo a las necesidades de cada paciente.
     
     section.inner#agende-su-cita   
       .container
         .c10.o1.tac
           h2 Agende su cita 
-
+    
+    section.inner#contacto
+      .container
+        .container.fluid: .c12
+          .container: .c10.o1.tac: h2 Contacto
+          
+          .container.fluid
+            .c6.map
+              | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2815637765207!2d-99.28640458448884!3d19.356957348109617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2073670407779%3A0x5d310566fd591cd8!2sAv.+Vasco+de+Quiroga+4299%2C+Contadero%2C+05370+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1487812588224" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            .c6.g
+              address <strong>Torre de consultorios Infinito</strong> <span>Piso 11, Consultorio 1102</span> Av. Prol. Vasco de Quiroga, No. 4299, Col. Lomas de Santa Fe, Cuajumalpa, Ciudad de México, Frente a Centro Médico ABC Santa Fe.
+              div.consulta
+                p: strong Horarios de consulta
+                p Nuestros horario de atención es Lunes a Viernes de 09:00 a 19:00 hrs. y Sábado de 09:00 a 13:00 hrs.
+                .tel Teléfonos:
+                p
+                  a(href="tel:5558132874") (55) 58 13 - 28 74
+                  |  / 
+                  a(href="tel:5521632004") (55) 21 63 - 20 04
   
     +scripts

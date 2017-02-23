@@ -32,6 +32,7 @@ include dw4/_dw4.jade
 - js('https://cdn.rawgit.com/rprovost/ng-backstretch/master/dist/ng-backstretch.min.js')
 - js('https://cdn.rawgit.com/novayagazeta-app/angular-swipebox/master/dist/angular-swipebox.min.js')
 - js('https://cdn.rawgit.com/nmccready/angular-simple-logger/master/dist/angular-simple-logger.light.min.js')
+- js('https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.4/scrollreveal.min.js')
 - js('app/js/angular-sticky.js')
 - js('app/app.js')
 
@@ -51,3 +52,12 @@ mixin linkTo(text, link)
   a(href="#{link}", du-smooth-scroll).link
     .icon.small: .fa.fa-angle-right
     .text !{text}
+
+
+mixin card(bgimg, dr, especialidad)
+  a.card(href="#", style="background-image: url(#{bgimg})").c4.g
+    .container.bottom.center
+      .c12
+        h3 #{dr}
+        hr
+        p #{especialidad}

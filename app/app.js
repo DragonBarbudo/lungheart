@@ -12,6 +12,12 @@ var app = angular.module('dw4', [
 
 app.config(function(){
 
+  window.sr = ScrollReveal({ reset: true });
+  sr.reveal('h2');
+  sr.reveal('.icones', 100);
+  sr.reveal('.card', 100);
+
+
 });
 
 
