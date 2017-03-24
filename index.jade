@@ -48,49 +48,113 @@ include _config.jade
     
     section.inner#especialidades
       .container.fluid.middle: .c12
-        .container: .c10.o1.tac: h2 Especialidades
+        .container
+          .c10.o1.tac: h2 Especialidades
           .c10.o1: .container.tac.especs
-            .c3.espec
+            .c.g.espec
               .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
               .text Neumología
-            .c3.espec
+              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de las enfermedades del corazón y del aparato circulatorio.
+            .c.g.espec
               .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
               .text Cardiología
-            .c3.espec
+              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de enfermedades de las enfermedades del aparato respiratorio.
+            .c.g.espec
               .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
               .text Angiología
-            .c3.espec
+              p Es la especialidad médica encargada del diagnóstico y tratamiento de las enfermedades de los vasos sanguíneos (arterias y venas).
+            //.c3.espec
               .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
               .text Broncología
         .container.fluid.especs_second
           .c6.cirugia
             h3 CIRUGÍA
             ul
-              li Vascular
-              li Torácica
-              li Cardiaca
+              li 
+                .text Vascular
+                p Se trata sobre la intervención directa sobre arterias y venas que permiten reparar arterias obstruidas, dilatadas o dañadas por traumatismos o defectos de nacimiento.
+              li
+                .text Torácica
+                p Especialidad la cual por tratamiento quirúrgico resuelve problemas que afectan al tórax. Las enfermedades que resuelve son: cirugía oncológica del pulmón, tumores en la parte central de los pulmones, pared torácica y pleura, patología traqueal, traumatismos torácicos, enfermedades de la pleura, del sistema nervioso autónomo  y del conducto torácico.
+              li
+                .text Cardiaca
+                p Especialidad quirúrgica que se ocupa de tratar complicaciones del corazón o grandes vasos como: Cardiopatía Isquémica, Malformaciones cardiacas, Enfermedades Valvulares del Corazón Incluyendo el trasplante cardiaco.
           .c6.pediatria
             h3 PEDIATRÍA
             ul
-              li Cardiopediatría
-              li Neumopediatría
+              li 
+                .text Cardiopediatría
+                p Es la serie de acciones de prevención y diagnóstico, tratamiento y rehabilitación de los problemas de cardiopatías congénitas, malformaciones cardiacas y las alteraciones cardiológicas del corazón en el paciente pediátrico.
+              li
+                .text Neumopediatría
+                p Subespecialidad de la pediatría que se dedica al diagnóstico y tratamiento de los problemas respiratorios en niños y jóvenes.
+              li: +linkTo('Conóce a nuestros médicos', '#nuestros-medicos')
+      .container.middle.estudios
+        .c3.g.tac
+          img(src="app/img/icon-estudios.svg", alt="Estudios")
+          br
+          .text Estudios
+        .c
+          .container
+            .c.g
+              ul
+                li 
+                  .text Broncoscopia
+                  p Es un examen para visualizar las vías aéreas (Interior del pulmón y vías respiratorias) y diagnosticar enfermedades pulmonares. Este examen se puede utilizar igualmente durante el tratamiento de algunas afecciones pulmonares.
+                li
+                  .text Alteraciones del sueño
+                  p Estudios enfocados para la detección y tratamiento de algún trastorno del sueño, los estudios para identificar trastornos del sueño consisten en medir la calidad y cantidad del sueño, así como la respuesta del cuerpo ante las alteraciones del sueño.
+            .c.g
+              ul
+                li
+                  .text Holter
+                  p Es una prueba de diagnóstico cardiológico que consiste en la monitorización ambulatoria del registro electrocardiográfico por un tiempo prolongado de una persona que esta en movimiento.
+            
+                li
+                  .text Mapa
+                  p Es una prueba que permite registrar la presión arterial del paciente durante un periodo de tiempo prefijado.
+                li
+                  .text Electrocardiogramas
+                  p Es una prueba que registra la actividad eléctrica del corazón que se produce en cada latido cardiaco de una persona que esta en reposo.
       
+      
+      .container.middle.estudios
+        .c3.g.tac
+          img(src="app/img/icon-bronco.svg", alt="Procedimientos adicionales")
+          br
+          .text Procedimientos adicionales
+        .c
+          .container
+            .c.g
+                  .text Tabaquismo
+                  p Hoy en día el tabaquismo es responsable de muertes, afecciones respiratorias y tumores. Tenemos la solución mediante la participación de diversas especialidades.
+            .c.g
+                  .text Hiperhidrósis
+                  p Es el exceso de sudoración en diversas partes del cuerpo (Axilas, manos, pies y rostro) Lo solucionamos por medio de una intervención ambulatoria y sencilla.
+            .c.g
+                  .text Transtornos del sueño
+                  p Te ayudamos a dormir mejor, que tengas un sueño reparador eliminando afectaciones del sueño que merman la calidad de vida cotidiana, social, familiar y laboral.
+            
+    
     section.inner2#nuestros-medicos
       .container.fluid: .c12
         .container: .c10.o1.tac: h2 Nuestros médicos
         .container
           .c10.o1: .container
-            +card('app/img/dr.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dra. Silvia Cid Juárez', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Jhonatan Castillo', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Omar Baños', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Roberto Teodoro de Jesús', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Alejandro Fernández', 'Cirugía')
-            +card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cirugía')
+            +card('app/img/dr.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía de Tórax')
+            +card('app/img/dr.jpg', 'Dra. Silvia Cid Juárez', 'Neumóloga y Pruebas de función Pulmonar')
+            +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Neumología y Broncoscopia Intervencionista')
+            +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Neumología')
+            +card('app/img/dr.jpg', 'Dr. Jhonatan Castillo', 'Neumología')
+            +card('app/img/dr.jpg', 'Dr. Omar Baños', 'Rehabilitador Pulmonar')
+            +card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Neumopediatra')
+            +card('app/img/dr.jpg', 'Dr. Roberto Teodoro de Jesús', 'Cardiopediatra')
+            +card('app/img/dr.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirujano Cardiotorácico y Cardiovascular')
+            +card('app/img/dr.jpg', 'Dr. Alejandro Fernández', 'Cardiología Intervencionista')
+            +card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cardiología')
+            +card('app/img/dr.jpg', 'Dr. Sergio Benites Palacio', 'Angiología, Cirugía Vascular y Endovascular')
+            +card('app/img/dr.jpg', 'Dr. José Manuel Lorenzo Silva', 'Cirugía de Tórax')
+            +card('app/img/dr.jpg', 'Dr. Enrique Olaya López', 'Neumología, Medicina del Tórax y Medicina Interna')
             
       
       

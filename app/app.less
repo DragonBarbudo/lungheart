@@ -143,7 +143,7 @@ section#intro{
 
 section.inner, section.inner2{
   padding-top: 80px;
-  height: 100%;
+  min-height: 100%;
   h2{
     font-size: 4em;
     color:@g;
@@ -202,26 +202,33 @@ section#inicio{
 
 
 section#especialidades{
+  font-weight: 300;
   .especs{
     margin-top: 30px;
   }
   .icones{
     height: 120px;
-      vertical-align: middle;;
+    vertical-align: middle;
   }
   .text{
     color:@g;
     font-weight: 300;
-    font-size: .4em;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  p{
+    color:@g/1.1;
+    font-size: 1em;
   }
   .especs_second{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
     .cirugia, .pediatria{
       background-size: cover;
       text-align: center;
       color:@w;
-      padding: 50px 0;
+      padding: 50px 40px;
+
       h3{
         font-size: 2em;
         margin: 20px 0;
@@ -229,9 +236,26 @@ section#especialidades{
       ul{
         list-style: none;
         li{
-          padding: 10px 0;
-          font-size: 1.3em;
+          padding: 5px 0;
           font-weight: 300;
+        }
+      }
+      .text{
+        font-size: 1.4em;
+        color:@w;
+      }
+      p{
+        color:@g*1.1;
+        font-size: 0.9em;
+        margin: 10px;
+      }
+      .link{
+        display: block;
+        margin-top: 60px;
+        color:@sec;
+        .icon{
+          background: @sec;
+          color:@w;
         }
       }
     }
@@ -247,6 +271,15 @@ section#especialidades{
 }
 
 
+.estudios{
+  padding: 60px 0;
+  ul{
+    list-style: none;
+    li{
+      margin-top: 50px;
+    }
+  }
+}
 
 .card{
   display: block;

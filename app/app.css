@@ -1601,7 +1601,7 @@ section#intro .entrar a:hover .icon {
 section.inner,
 section.inner2 {
   padding-top: 80px;
-  height: 100%;
+  min-height: 100%;
 }
 section.inner h2,
 section.inner2 h2 {
@@ -1667,6 +1667,9 @@ section#inicio .conoce {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+section#especialidades {
+  font-weight: 300;
+}
 section#especialidades .especs {
   margin-top: 30px;
 }
@@ -1677,18 +1680,23 @@ section#especialidades .icones {
 section#especialidades .text {
   color: #9D9C9C;
   font-weight: 300;
-  font-size: .4em;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+section#especialidades p {
+  color: #8f8e8e;
+  font-size: 1em;
 }
 section#especialidades .especs_second {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 section#especialidades .especs_second .cirugia,
 section#especialidades .especs_second .pediatria {
   background-size: cover;
   text-align: center;
   color: #f5f5f5;
-  padding: 50px 0;
+  padding: 50px 40px;
 }
 section#especialidades .especs_second .cirugia h3,
 section#especialidades .especs_second .pediatria h3 {
@@ -1701,9 +1709,30 @@ section#especialidades .especs_second .pediatria ul {
 }
 section#especialidades .especs_second .cirugia ul li,
 section#especialidades .especs_second .pediatria ul li {
-  padding: 10px 0;
-  font-size: 1.3em;
+  padding: 5px 0;
   font-weight: 300;
+}
+section#especialidades .especs_second .cirugia .text,
+section#especialidades .especs_second .pediatria .text {
+  font-size: 1.4em;
+  color: #f5f5f5;
+}
+section#especialidades .especs_second .cirugia p,
+section#especialidades .especs_second .pediatria p {
+  color: #adacac;
+  font-size: 0.9em;
+  margin: 10px;
+}
+section#especialidades .especs_second .cirugia .link,
+section#especialidades .especs_second .pediatria .link {
+  display: block;
+  margin-top: 60px;
+  color: #A44540;
+}
+section#especialidades .especs_second .cirugia .link .icon,
+section#especialidades .especs_second .pediatria .link .icon {
+  background: #A44540;
+  color: #f5f5f5;
 }
 section#especialidades .especs_second .cirugia {
   background-image: url(img/cirugia.jpg);
@@ -1712,6 +1741,15 @@ section#especialidades .especs_second .cirugia {
 section#especialidades .especs_second .pediatria {
   background-image: url(img/pediatria.jpg);
   background-position: 10px 0;
+}
+.estudios {
+  padding: 60px 0;
+}
+.estudios ul {
+  list-style: none;
+}
+.estudios ul li {
+  margin-top: 50px;
 }
 .card {
   display: block;
