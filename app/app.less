@@ -82,6 +82,7 @@ section#intro{
 
 
 .topbar{
+  width: 100% !important;
   height: 60px;
   .box-sizing(border-box);
   padding-top: 16px;
@@ -101,7 +102,7 @@ section#intro{
         a{
           display: block;
           font-size: 0.8em;
-          color:@g;
+          color:@b;
           font-weight: lighter;
           text-transform: uppercase;
           border-right: 1px solid @w/1.1;
@@ -110,7 +111,8 @@ section#intro{
             color:@b;
           }
           &.active{
-            color:@main;
+            color:@w;
+            background: @main;
           }
         }
         &:last-child {a{ border:none; }}
@@ -195,7 +197,7 @@ section#inicio{
     }
   }
   .conoce{
-    margin-top: 40px;
+    margin-top: 160px;
     margin-bottom: 40px;
   }
 }
@@ -253,6 +255,7 @@ section#especialidades{
         display: block;
         margin-top: 60px;
         color:@sec;
+        cursor:pointer;
         .icon{
           background: @sec;
           color:@w;
@@ -260,12 +263,12 @@ section#especialidades{
       }
     }
     .cirugia{
-      background-image: url(img/cirugia.jpg);
-      background-position: -10px 0;
+      //background-image: url(img/cirugia.jpg);
+      //background-position: -10px 0;
     }
     .pediatria{
-      background-image: url(img/pediatria.jpg);
-      background-position: 10px 0;
+      //background-image: url(img/pediatria.jpg);
+      //background-position: 10px 0;
     }
   }
 }
@@ -398,4 +401,35 @@ section#contacto{
 
     }
   }
+}
+
+.agendar{
+  border: 1px solid @g;
+  padding: 30px;
+  input{
+    border-bottom: 1px solid @w/1.1;
+    padding: 10px;
+
+  }
+  .container .c{padding-right: 10px;}
+  .container .c:last-child{padding-right: 0;}
+  button{
+    margin: 30px 0 0 0;
+    cursor:pointer;
+  }
+  .note{
+    color:@w;
+    font-size: 1em;
+    padding: 20px;
+    background: @b;
+  }
+  datepicker { font-size: inherit !important; }
+}
+
+._720kb-datepicker-calendar-header:nth-child(odd){
+  background: @sec;
+}
+._720kb-datepicker-calendar-day._720kb-datepicker-active, ._720kb-datepicker-calendar-day:hover{
+  background: @main;
+  color:@w;
 }

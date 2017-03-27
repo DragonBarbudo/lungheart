@@ -67,7 +67,7 @@ include _config.jade
               .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
               .text Broncología
         .container.fluid.especs_second
-          .c6.cirugia
+          .c6.cirugia(backstretch backstretch-images="['app/img/cirugia.jpg', 'app/img/cirugia2.jpg', 'app/img/cirugia3.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 CIRUGÍA
             ul
               li 
@@ -79,7 +79,7 @@ include _config.jade
               li
                 .text Cardiaca
                 p Especialidad quirúrgica que se ocupa de tratar complicaciones del corazón o grandes vasos como: Cardiopatía Isquémica, Malformaciones cardiacas, Enfermedades Valvulares del Corazón Incluyendo el trasplante cardiaco.
-          .c6.pediatria
+          .c6.pediatria(backstretch backstretch-images="['app/img/pediatria.jpg', 'app/img/pediatria2.jpg', 'app/img/pediatria3.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 PEDIATRÍA
             ul
               li 
@@ -89,52 +89,44 @@ include _config.jade
                 .text Neumopediatría
                 p Subespecialidad de la pediatría que se dedica al diagnóstico y tratamiento de los problemas respiratorios en niños y jóvenes.
               li: +linkTo('Conóce a nuestros médicos', '#nuestros-medicos')
-      .container.middle.estudios
-        .c3.g.tac
-          img(src="app/img/icon-estudios.svg", alt="Estudios")
-          br
-          .text Estudios
-        .c
-          .container
-            .c.g
-              ul
-                li 
-                  .text Broncoscopia
-                  p Es un examen para visualizar las vías aéreas (Interior del pulmón y vías respiratorias) y diagnosticar enfermedades pulmonares. Este examen se puede utilizar igualmente durante el tratamiento de algunas afecciones pulmonares.
-                li
-                  .text Alteraciones del sueño
-                  p Estudios enfocados para la detección y tratamiento de algún trastorno del sueño, los estudios para identificar trastornos del sueño consisten en medir la calidad y cantidad del sueño, así como la respuesta del cuerpo ante las alteraciones del sueño.
-            .c.g
-              ul
-                li
-                  .text Holter
-                  p Es una prueba de diagnóstico cardiológico que consiste en la monitorización ambulatoria del registro electrocardiográfico por un tiempo prolongado de una persona que esta en movimiento.
-            
-                li
-                  .text Mapa
-                  p Es una prueba que permite registrar la presión arterial del paciente durante un periodo de tiempo prefijado.
-                li
-                  .text Electrocardiogramas
-                  p Es una prueba que registra la actividad eléctrica del corazón que se produce en cada latido cardiaco de una persona que esta en reposo.
-      
-      
-      .container.middle.estudios
-        .c3.g.tac
-          img(src="app/img/icon-bronco.svg", alt="Procedimientos adicionales")
-          br
-          .text Procedimientos adicionales
-        .c
-          .container
-            .c.g
-                  .text Tabaquismo
-                  p Hoy en día el tabaquismo es responsable de muertes, afecciones respiratorias y tumores. Tenemos la solución mediante la participación de diversas especialidades.
-            .c.g
-                  .text Hiperhidrósis
-                  p Es el exceso de sudoración en diversas partes del cuerpo (Axilas, manos, pies y rostro) Lo solucionamos por medio de una intervención ambulatoria y sencilla.
-            .c.g
-                  .text Transtornos del sueño
-                  p Te ayudamos a dormir mejor, que tengas un sueño reparador eliminando afectaciones del sueño que merman la calidad de vida cotidiana, social, familiar y laboral.
-            
+          
+          .c6.cirugia(backstretch backstretch-images="['app/img/estudios.jpg', 'app/img/estudios.jpg', 'app/img/estudios.jpg']" backstretch-duration="3000" backstretch-fade="1")
+            h3 ESTUDIOS
+            ul
+              li 
+                .text Broncoscopia
+                p Es un examen para visualizar las vías aéreas (Interior del pulmón y vías respiratorias) y diagnosticar enfermedades pulmonares. Este examen se puede utilizar igualmente durante el tratamiento de algunas afecciones pulmonares.
+              li
+                .text Alteraciones del sueño
+                p Estudios enfocados para la detección y tratamiento de algún trastorno del sueño, los estudios para identificar trastornos del sueño consisten en medir la calidad y cantidad del sueño, así como la respuesta del cuerpo ante las alteraciones del sueño.
+              li
+                .text Holter
+                p Es una prueba de diagnóstico cardiológico que consiste en la monitorización ambulatoria del registro electrocardiográfico por un tiempo prolongado de una persona que esta en movimiento.
+          
+              li
+                .text Mapa
+                p Es una prueba que permite registrar la presión arterial del paciente durante un periodo de tiempo prefijado.
+              li
+                .text Electrocardiogramas
+                p Es una prueba que registra la actividad eléctrica del corazón que se produce en cada latido cardiaco de una persona que esta en reposo.
+          .c6.pediatria(backstretch backstretch-images="['app/img/pediatria.jpg', 'app/img/pediatria2.jpg', 'app/img/pediatria3.jpg']" backstretch-duration="3000" backstretch-fade="1")
+            h3 PROCEDIMIENTOS ADICIONALES
+            ul
+              li 
+                .text Tabaquismo
+                p Hoy en día el tabaquismo es responsable de muertes, afecciones respiratorias y tumores. Tenemos la solución mediante la participación de diversas especialidades.
+              li
+                .text Hiperhidrósis
+                p Es el exceso de sudoración en diversas partes del cuerpo (Axilas, manos, pies y rostro) Lo solucionamos por medio de una intervención ambulatoria y sencilla.
+              li 
+                .text Transtornos del sueño
+                p Te ayudamos a dormir mejor, que tengas un sueño reparador eliminando afectaciones del sueño que merman la calidad de vida cotidiana, social, familiar y laboral.
+              li: +linkTo('Agende su cita ahora', '#agende-su-cita')
+              li: +linkTo('¿Tiene dudas? Conctáctenos', '#contacto')
+                
+          
+          
+
     
     section.inner2#nuestros-medicos
       .container.fluid: .c12
@@ -146,15 +138,15 @@ include _config.jade
             +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Neumología y Broncoscopia Intervencionista')
             +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Neumología')
             +card('app/img/dr.jpg', 'Dr. Jhonatan Castillo', 'Neumología')
-            +card('app/img/dr.jpg', 'Dr. Omar Baños', 'Rehabilitador Pulmonar')
-            +card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Neumopediatra')
+            //+card('app/img/dr.jpg', 'Dr. Omar Baños', 'Rehabilitador Pulmonar')
+            //+card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Neumopediatra')
             +card('app/img/dr.jpg', 'Dr. Roberto Teodoro de Jesús', 'Cardiopediatra')
             +card('app/img/dr.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirujano Cardiotorácico y Cardiovascular')
             +card('app/img/dr.jpg', 'Dr. Alejandro Fernández', 'Cardiología Intervencionista')
-            +card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cardiología')
+            //+card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cardiología')
             +card('app/img/dr.jpg', 'Dr. Sergio Benites Palacio', 'Angiología, Cirugía Vascular y Endovascular')
-            +card('app/img/dr.jpg', 'Dr. José Manuel Lorenzo Silva', 'Cirugía de Tórax')
-            +card('app/img/dr.jpg', 'Dr. Enrique Olaya López', 'Neumología, Medicina del Tórax y Medicina Interna')
+            //+card('app/img/dr.jpg', 'Dr. José Manuel Lorenzo Silva', 'Cirugía de Tórax')
+            //+card('app/img/dr.jpg', 'Dr. Enrique Olaya López', 'Neumología, Medicina del Tórax y Medicina Interna')
             
       
       
@@ -175,7 +167,28 @@ include _config.jade
       .container
         .c10.o1.tac
           h2 Agende su cita 
-    
+      .container(ng-controller="FormCtrl"): .c6.o3
+        form.agendar( ng-submit="submitForm($event)")
+          input(type="hidden" name="_to" value="contacto@lungandheart.com.mx")
+          //input(type="hidden" name="_from" ng-model="email")
+          input(type="hidden" name="_subject" value="Cita agendada")
+          input(type="text" name="Nombre del paciente" placeholder="Nombre" required).fluid
+          .container
+            .c: input(type="mail" name="_from" placeholder="Correo electrónico" required).fluid
+            .c: input(type="text" name="Telefono" placeholder="Número telefónico").fluid
+          
+          .container
+            .c: datepicker(date-format="MMMM d, y", date-typer="true"): input(type="text" ng-model="fecha" name="Fecha" placeholder="Fecha" required).fluid
+            .c: input(type="text" name="Preferencia" placeholder="Preferencia de horario").fluid
+          input(type="text" name="Asunto" placeholder="Asunto de su cita" required).fluid
+          .container
+            .c(ng-show="sent")
+              .note La solicitud de cita ha sido enviada. <br>Le confirmaremos la fecha de su cita y los horarios disponibles a su dirección de correo electrónico.
+            .c.tar(ng-hide="sent")
+              button(type="submit").link
+                .icon.small: .fa.fa-angle-right
+                .text Agendar cita
+      
     section.inner#contacto
       .container
         .container.fluid: .c12

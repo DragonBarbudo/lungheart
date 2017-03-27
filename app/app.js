@@ -7,7 +7,8 @@ var app = angular.module('dw4', [
   'tooltipster',
   'duScroll',
   'slickCarousel',
-  'sticky'
+  'sticky',
+  '720kb.datepicker'
 ]);
 
 app.config(function(){

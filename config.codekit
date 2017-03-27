@@ -75,6 +75,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/app\/img\/cirugia2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29104,
+		"inputAbbreviatedPath": "\/app\/img\/cirugia2.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/cirugia2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/cirugia3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49424,
+		"inputAbbreviatedPath": "\/app\/img\/cirugia3.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/cirugia3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/img\/dr.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -82,6 +104,39 @@
 		"initialSize": 29935,
 		"inputAbbreviatedPath": "\/app\/img\/dr.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/dr.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/estudios.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29888,
+		"inputAbbreviatedPath": "\/app\/img\/estudios.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/estudios.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/estudios2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34034,
+		"inputAbbreviatedPath": "\/app\/img\/estudios2.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/estudios2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/estudios3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43870,
+		"inputAbbreviatedPath": "\/app\/img\/estudios3.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/estudios3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -126,6 +181,28 @@
 		"initialSize": 26189,
 		"inputAbbreviatedPath": "\/app\/img\/pediatria.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/pediatria.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/pediatria2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33506,
+		"inputAbbreviatedPath": "\/app\/img\/pediatria2.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/pediatria2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/pediatria3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36757,
+		"inputAbbreviatedPath": "\/app\/img\/pediatria3.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/pediatria3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -303,6 +380,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
