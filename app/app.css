@@ -1508,6 +1508,7 @@ section#intro .entrar a:hover .icon {
 }
 .topbar nav {
   width: 100%;
+  overflow: hidden;
 }
 .topbar nav ul {
   margin-left: auto;
@@ -1559,14 +1560,40 @@ section#intro .entrar a:hover .icon {
   width: 100%;
   text-align: center;
 }
+@media only screen and (max-width: 720px) {
+  .topbar nav ul li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .topbar nav ul li.g {
+    -lh-property: 0;
+flex-basis:-webkit-calc(50% - 20px);
+flex-basis:-moz-calc(50% - 20px);
+flex-basis:calc(50% - 20px);
+;
+    -lh-property: 0;
+max-width:-webkit-calc(50% - 20px);
+max-width:-moz-calc(50% - 20px);
+max-width:calc(50% - 20px);
+;
+  }
+}
 .topbar nav ul li a {
   display: block;
   font-size: 0.8em;
   color: #666666;
-  font-weight: lighter;
   text-transform: uppercase;
   border-right: 1px solid #dfdfdf;
   padding: 5px;
+}
+@media only screen and (max-width: 720px) {
+  .topbar nav ul li a {
+    padding: 10px 5px;
+  }
 }
 .topbar nav ul li a:hover {
   color: #666666;
@@ -1577,6 +1604,25 @@ section#intro .entrar a:hover .icon {
 }
 .topbar nav ul li:last-child a {
   border: none;
+}
+.topbar .logo {
+  text-align: center;
+  display: block;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px), only screen and (max-width: 720px) {
+  .topbar .logo {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px) {
+  .topbar {
+    height: 90px !important;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .topbar {
+    height: 140px !important;
+  }
 }
 .banner {
   width: 100%;
@@ -1605,12 +1651,16 @@ section.inner2 {
   padding-top: 80px;
   min-height: 100%;
 }
-section.inner h2,
-section.inner2 h2 {
+section h2 {
   font-size: 4em;
   color: #9D9C9C;
   font-weight: 300;
   padding: 40px 0;
+}
+@media only screen and (max-width: 720px) {
+  section h2 {
+    font-size: 2.8em;
+  }
 }
 section.inner2 {
   height: auto;
@@ -1629,6 +1679,11 @@ section#inicio .bg1 {
   background-size: contain;
   z-index: -1;
 }
+@media only screen and (min-width: 721px) and (max-width: 1199px) {
+  section#inicio .bg1 {
+    background-position: -20px -40px;
+  }
+}
 section#inicio .bg2 {
   position: absolute;
   right: 10px;
@@ -1640,6 +1695,11 @@ section#inicio .bg2 {
   background-size: contain;
   background-position: top right;
   z-index: -1;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px) {
+  section#inicio .bg2 {
+    background-position: 30px -50px;
+  }
 }
 section#inicio .bg3 {
   position: absolute;
@@ -1668,6 +1728,17 @@ section#inicio .sobre strong {
 section#inicio .conoce {
   margin-top: 160px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px), only screen and (max-width: 720px) {
+  section#inicio .conoce {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  section#inicio .conoce .link {
+    display: block;
+    margin-top: 40px;
+  }
 }
 section#especialidades {
   font-weight: 300;
@@ -1838,6 +1909,11 @@ section#nosotros .weare {
   font-weight: 300;
   color: #9D9C9C;
 }
+@media only screen and (max-width: 720px) {
+  section#nosotros .weare {
+    text-align: center;
+  }
+}
 section#nosotros .aboutus {
   border-left: 1px solid #9D9C9C;
 }
@@ -1847,6 +1923,11 @@ section#nosotros .aboutus p {
   color: #838282;
   padding-left: 30px;
   font-weight: 300;
+}
+@media only screen and (max-width: 720px) {
+  section#nosotros .aboutus {
+    border: none;
+  }
 }
 section#contacto {
   margin-bottom: 60px;
@@ -1861,11 +1942,21 @@ section#contacto address strong {
   font-size: 2em;
   font-weight: lighter;
 }
+@media only screen and (min-width: 721px) and (max-width: 1199px), only screen and (max-width: 720px) {
+  section#contacto address strong {
+    font-size: 1.6em;
+  }
+}
 section#contacto address span {
   display: block;
   color: #838282;
   font-weight: lighter;
   font-size: 1.7em;
+}
+@media only screen and (min-width: 721px) and (max-width: 1199px), only screen and (max-width: 720px) {
+  section#contacto address span {
+    font-size: 1.5em;
+  }
 }
 section#contacto .consulta {
   padding: 20px;
@@ -1876,6 +1967,11 @@ section#contacto .consulta strong {
   font-size: 2em;
   font-weight: lighter;
 }
+@media only screen and (min-width: 721px) and (max-width: 1199px), only screen and (max-width: 720px) {
+  section#contacto .consulta strong {
+    font-size: 1.6em;
+  }
+}
 section#contacto .consulta .tel {
   color: #838282;
   margin-top: 10px;
@@ -1883,6 +1979,11 @@ section#contacto .consulta .tel {
 section#contacto .consulta a {
   color: #2F4368;
   text-decoration: none;
+}
+@media only screen and (max-width: 720px) {
+  section#contacto iframe {
+    max-height: 300px;
+  }
 }
 .agendar {
   border: 1px solid #9D9C9C;

@@ -207,6 +207,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/app\/img\/procedimientos.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80816,
+		"inputAbbreviatedPath": "\/app\/img\/procedimientos.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/procedimientos.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/procedimientos2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31596,
+		"inputAbbreviatedPath": "\/app\/img\/procedimientos2.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/procedimientos2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/procedimientos3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28661,
+		"inputAbbreviatedPath": "\/app\/img\/procedimientos3.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/procedimientos3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/js\/angular-sticky.js": {
 		"fileType": 64,
 		"ignore": 1,

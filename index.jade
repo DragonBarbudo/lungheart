@@ -23,8 +23,8 @@ include _config.jade
   
     .topbar(sticky)
       .container
-        .c4: a(href="#inicio", du-smooth-scroll): img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart")
-        .c8
+        .c4.ct12.cm12: a(href="#inicio", du-smooth-scroll).logo: img(src="app/img/lung-heart-logo.svg", alt="Lung & Heart")
+        .c8.ct12.cm12
           +menu
     
     
@@ -39,8 +39,8 @@ include _config.jade
             .c8.o2
               p Centro Médico Especializado líder en el manejo del paciente con enfermedades <strong>Cardiacas</strong> y <strong>Respiratorias</strong>.
           .container.conoce.tac
-            .c5.o1.g: +linkTo('Conóce nuestras especialidades', '#especialidades')
-            .c5.g: +linkTo('Identifica a nuestros médicos', '#nuestros-medicos')
+            .c5.o1.cm10.g: +linkTo('Conóce nuestras especialidades', '#especialidades')
+            .c5.g.cm10.om1: +linkTo('Identifica a nuestros médicos', '#nuestros-medicos')
     
     .banner.banner-a
       .banner-logo
@@ -51,15 +51,15 @@ include _config.jade
         .container
           .c10.o1.tac: h2 Especialidades
           .c10.o1: .container.tac.especs
-            .c.g.espec
+            .c.cm12.g.espec
               .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
               .text Neumología
               p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de las enfermedades del corazón y del aparato circulatorio.
-            .c.g.espec
+            .c.cm12.g.espec
               .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
               .text Cardiología
               p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de enfermedades de las enfermedades del aparato respiratorio.
-            .c.g.espec
+            .c.cm12.g.espec
               .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
               .text Angiología
               p Es la especialidad médica encargada del diagnóstico y tratamiento de las enfermedades de los vasos sanguíneos (arterias y venas).
@@ -67,7 +67,7 @@ include _config.jade
               .icones: img(src="app/img/icon-bronco.svg", alt="Broncología")
               .text Broncología
         .container.fluid.especs_second
-          .c6.cirugia(backstretch backstretch-images="['app/img/cirugia.jpg', 'app/img/cirugia2.jpg', 'app/img/cirugia3.jpg']" backstretch-duration="3000" backstretch-fade="1")
+          .c6.cm12.cirugia(backstretch backstretch-images="['app/img/cirugia.jpg', 'app/img/cirugia2.jpg', 'app/img/cirugia3.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 CIRUGÍA
             ul
               li 
@@ -79,7 +79,7 @@ include _config.jade
               li
                 .text Cardiaca
                 p Especialidad quirúrgica que se ocupa de tratar complicaciones del corazón o grandes vasos como: Cardiopatía Isquémica, Malformaciones cardiacas, Enfermedades Valvulares del Corazón Incluyendo el trasplante cardiaco.
-          .c6.pediatria(backstretch backstretch-images="['app/img/pediatria.jpg', 'app/img/pediatria2.jpg', 'app/img/pediatria3.jpg']" backstretch-duration="3000" backstretch-fade="1")
+          .c6.cm12.pediatria(backstretch backstretch-images="['app/img/pediatria.jpg', 'app/img/pediatria2.jpg', 'app/img/pediatria3.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 PEDIATRÍA
             ul
               li 
@@ -90,7 +90,7 @@ include _config.jade
                 p Subespecialidad de la pediatría que se dedica al diagnóstico y tratamiento de los problemas respiratorios en niños y jóvenes.
               li: +linkTo('Conóce a nuestros médicos', '#nuestros-medicos')
           
-          .c6.cirugia(backstretch backstretch-images="['app/img/estudios.jpg', 'app/img/estudios.jpg', 'app/img/estudios.jpg']" backstretch-duration="3000" backstretch-fade="1")
+          .c6.cm12.cirugia(backstretch backstretch-images="['app/img/estudios.jpg', 'app/img/estudios.jpg', 'app/img/estudios.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 ESTUDIOS
             ul
               li 
@@ -109,7 +109,7 @@ include _config.jade
               li
                 .text Electrocardiogramas
                 p Es una prueba que registra la actividad eléctrica del corazón que se produce en cada latido cardiaco de una persona que esta en reposo.
-          .c6.pediatria(backstretch backstretch-images="['app/img/pediatria.jpg', 'app/img/pediatria2.jpg', 'app/img/pediatria3.jpg']" backstretch-duration="3000" backstretch-fade="1")
+          .c6.cm12.pediatria(backstretch backstretch-images="['app/img/procedimientos.jpg', 'app/img/procedimientos2.jpg', 'app/img/procedimientos3.jpg']" backstretch-duration="3000" backstretch-fade="1")
             h3 PROCEDIMIENTOS ADICIONALES
             ul
               li 
@@ -132,7 +132,7 @@ include _config.jade
       .container.fluid: .c12
         .container: .c10.o1.tac: h2 Nuestros médicos
         .container
-          .c10.o1: .container
+          .c10.o1.cm12.om0: .container
             +card('app/img/dr.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía de Tórax')
             +card('app/img/dr.jpg', 'Dra. Silvia Cid Juárez', 'Neumóloga y Pruebas de función Pulmonar')
             +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Neumología y Broncoscopia Intervencionista')
@@ -157,29 +157,29 @@ include _config.jade
         .container
           .c2.o5: img(src="app/img/lung-heart-imago.svg", alt="Lung & Heart").fluid
         .container.info
-          .c5.o1.g
+          .c5.o1.cm10.o1.g
             .weare Somos un Centro Médico Especializado en Enfermedades Cardiológicas y Pulmonares
-          .c5.aboutus
+          .c5.cm10.o1.aboutus
             p Todos nuestros integrantes médicos cuenta con Alta Especialidad para lograr la mejor atención de estos padecimientos, procurando la calidad de vida y funcionalidad de las actividades cotidianas de nuestros pacientes.
             p Nuestra labor consiste en <strong>Diagnosticar</strong> y <strong>tratar</strong> enfermedades por medio de fármacos o quirúrgicamente, de acuerdo a las necesidades de cada paciente.
     
-    section.inner#agende-su-cita   
+    section#agende-su-cita   
       .container
         .c10.o1.tac
           h2 Agende su cita 
-      .container(ng-controller="FormCtrl"): .c6.o3
+      .container(ng-controller="FormCtrl"): .c6.o3.ct10.ot1.cm10.om1
         form.agendar( ng-submit="submitForm($event)")
           input(type="hidden" name="_to" value="contacto@lungandheart.com.mx")
           //input(type="hidden" name="_from" ng-model="email")
           input(type="hidden" name="_subject" value="Cita agendada")
           input(type="text" name="Nombre del paciente" placeholder="Nombre" required).fluid
           .container
-            .c: input(type="mail" name="_from" placeholder="Correo electrónico" required).fluid
-            .c: input(type="text" name="Telefono" placeholder="Número telefónico").fluid
+            .c.cm12: input(type="mail" name="_from" placeholder="Correo electrónico" required).fluid
+            .c.cm12: input(type="text" name="Telefono" placeholder="Número telefónico").fluid
           
           .container
-            .c: datepicker(date-format="MMMM d, y", date-typer="true"): input(type="text" ng-model="fecha" name="Fecha" placeholder="Fecha" required).fluid
-            .c: input(type="text" name="Preferencia" placeholder="Preferencia de horario").fluid
+            .c.cm12: datepicker(date-format="MMMM d, y", date-typer="true"): input(type="text" ng-model="fecha" name="Fecha" placeholder="Fecha" required).fluid
+            .c.cm12: input(type="text" name="Preferencia" placeholder="Preferencia de horario").fluid
           input(type="text" name="Asunto" placeholder="Asunto de su cita" required).fluid
           .container
             .c(ng-show="sent")
@@ -195,9 +195,9 @@ include _config.jade
           .container: .c10.o1.tac: h2 Contacto
           
           .container.fluid
-            .c6.map
+            .c6.cm10.o1.map
               | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2815637765207!2d-99.28640458448884!3d19.356957348109617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2073670407779%3A0x5d310566fd591cd8!2sAv.+Vasco+de+Quiroga+4299%2C+Contadero%2C+05370+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1487812588224" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-            .c6.g
+            .c6.cm12.g
               address <strong>Torre de consultorios Infinito</strong> <span>Piso 11, Consultorio 1102</span> Av. Prol. Vasco de Quiroga, No. 4299, Col. Lomas de Santa Fe, Cuajumalpa, Ciudad de México, Frente a Centro Médico ABC Santa Fe.
               div.consulta
                 p: strong Horarios de consulta
