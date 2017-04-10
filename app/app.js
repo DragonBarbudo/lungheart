@@ -24,6 +24,13 @@ app.config(function(){
 
 app.run(function(){
 
+
+  $('.card').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+
+
 });
 
 

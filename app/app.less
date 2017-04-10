@@ -346,7 +346,7 @@ section#especialidades{
   h3{
     color:@w;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: 400;
   }
   hr{
@@ -359,10 +359,11 @@ section#especialidades{
     color:@w;
     font-size: 0.9em;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     .transition(all 0.3s);
   }
   &:hover{
+    /*
     hr{
       border-color:@w;
       margin-top: 30px;
@@ -373,11 +374,48 @@ section#especialidades{
       margin-top: 30px;
       .transition(all 0.5s);
     }
+    */
     .container{
       &:before{
         top: 0%;
         .transition(all 0.4s);
       }
+    }
+  }
+
+  cursor: pointer;
+  position: relative;
+  .back{
+    .opacity(0);
+    .background-image(linear-gradient(fade(@main/2,50%),fade(@main/2,95%)));
+    ul{
+      li{
+        color: @w;
+        padding: 2px 2px;
+        position: relative;
+        font-size: 0.9em;
+        font-weight: 300;
+        &:after{
+          content:"";
+          position: absolute;
+          border-bottom: 1px solid @sec;
+          width: 20%;
+          bottom: 0;
+          left: 40%;
+
+        }
+      }
+    }
+  }
+  &.active{
+    .front{
+      .opacity(0);
+      position: absolute;
+    }
+    .back{
+      .opacity(1);
+      position: absolute;
+
     }
   }
 }

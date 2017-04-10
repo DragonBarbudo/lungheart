@@ -54,11 +54,12 @@ include _config.jade
             .c.cm12.g.espec
               .icones: img(src="app/img/icon-neumo.svg", alt="Neumología")
               .text Neumología
-              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de las enfermedades del corazón y del aparato circulatorio.
+              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de enfermedades de las enfermedades del aparato respiratorio.
             .c.cm12.g.espec
               .icones: img(src="app/img/icon-cardio.svg", alt="Cardiología")
               .text Cardiología
-              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de enfermedades de las enfermedades del aparato respiratorio.
+              p Es la especialidad médica encargada del estudio, diagnóstico, tratamiento y prevención de las enfermedades del corazón y del aparato circulatorio.
+              
             .c.cm12.g.espec
               .icones: img(src="app/img/icon-angio.svg", alt="Angiología")
               .text Angiología
@@ -119,10 +120,10 @@ include _config.jade
                 .text Hiperhidrósis
                 p Es el exceso de sudoración en diversas partes del cuerpo (Axilas, manos, pies y rostro) Lo solucionamos por medio de una intervención ambulatoria y sencilla.
               li 
-                .text Transtornos del sueño
+                .text Trastornos del sueño
                 p Te ayudamos a dormir mejor, que tengas un sueño reparador eliminando afectaciones del sueño que merman la calidad de vida cotidiana, social, familiar y laboral.
               li: +linkTo('Agende su cita ahora', '#agende-su-cita')
-              li: +linkTo('¿Tiene dudas? Conctáctenos', '#contacto')
+              li: +linkTo('¿Tiene dudas? Contáctenos', '#contacto')
                 
           
           
@@ -133,16 +134,73 @@ include _config.jade
         .container: .c10.o1.tac: h2 Nuestros médicos
         .container
           .c10.o1.cm12.om0: .container
-            +card('app/img/dr.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía de Tórax')
+            +card('app/img/dr-miguel-martinez-arias.jpg', 'Dr. Miguel Martínez Arias', 'Cirugía de Tórax')
+              ul
+                li Hiperidrosis
+                li Trauma torácico
+                li Cirugía por mínima invasión
+                li Cáncer pulmonar
+                li Cirugía de tráquea
+                li Estenosis traqueal
+                li Tumores de mediastino
             +card('app/img/dr.jpg', 'Dra. Silvia Cid Juárez', 'Neumóloga y Pruebas de función Pulmonar')
+              ul
+                li Neumonía
+                li Asma
+                li Enfisema Pulmonar
+                li Dificultad Respiratoria
+                li Tos
+                li Fisiología Pulmonar
+                li Pruebas de Funciones Respiratoria
+
             +card('app/img/dr.jpg', 'Dra. Esmeralda Aspuru', 'Neumología y Broncoscopia Intervencionista')
-            +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Neumología')
+              ul
+                li Neumonía                li Asma                li Enfisema Pulmonar                li Dificultad Respiratoria •Tos                li Broncoscopia                li Retiro de Cuerpos Extraños en Tráquea y Bronquios de Urgencia                li Estudios Diagnósticos Pulmonares            +card('app/img/dr.jpg', 'Dr. Víctor Mendoza', 'Neumología')
+              ul
+                li Neumonía
+                li Asma
+                li Enfisema Pulmonar
+                li Dificultad Respiratoria
+                li Tos
+                li Medicina Critica y Terapia Intensiva
+                li Manejo de Paciente Critico
+                li Enfermedad Pulmonar Obstructiva Crónica
             +card('app/img/dr.jpg', 'Dr. Jhonatan Castillo', 'Neumología')
+              ul 
+                li Neumonía
+                li Asma
+                li Enfisema Pulmonar
+                li Dificultad Respiratoria
+                li Tos
+                li Trastornos del Sueño
+                li Estudio Diagnóstico Para Alteraciones del Sueño
+                li Valoraciones Pulmonares
+
             //+card('app/img/dr.jpg', 'Dr. Omar Baños', 'Rehabilitador Pulmonar')
             //+card('app/img/dr.jpg', 'Dra. Teresa Leal', 'Neumopediatra')
             +card('app/img/dr.jpg', 'Dr. Roberto Teodoro de Jesús', 'Cardiopediatra')
-            +card('app/img/dr.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirujano Cardiotorácico y Cardiovascular')
-            +card('app/img/dr.jpg', 'Dr. Alejandro Fernández', 'Cardiología Intervencionista')
+              ul 
+                li Cardiopatías Congénitas
+                li Cardiopatías Adquiridas
+
+            +card('app/img/dr-miguel-corona-perezgrovas.jpg', 'Dr. Miguel Corona Perezgrovas', 'Cirujano Cardiotorácico y Cardiovascular')
+              ul
+                li Cirugía Cardiovascular
+                li Cirugía de Corazón para corrección de enfermedades de nacimiento y en niños
+                li Cirugía de Corazón para pacientes infartados
+                li Cirugía de Corazón para válvulas cardiacas
+
+            +card('app/img/dr-alejandro-fernandez.jpg', 'Dr. Alejandro Fernández', 'Cardiología Intervencionista')
+              ul
+                li Cardiología
+                li Valoración Cardiaca
+                li Valoración Pre-Operatoria
+                li Estudios de Función Cardiaca (Holter, MAPA y Electrocardiograma)
+                li Colocación de Marcapasos Transitorio y Definitivo
+                li Cateterismo Cardiaco
+                li Hipertensión Arterial
+                li Arritmias
+
             //+card('app/img/dr.jpg', 'Dr. Daniel Verón', 'Cardiología')
             +card('app/img/dr.jpg', 'Dr. Sergio Benites Palacio', 'Angiología, Cirugía Vascular y Endovascular')
             //+card('app/img/dr.jpg', 'Dr. José Manuel Lorenzo Silva', 'Cirugía de Tórax')
@@ -200,7 +258,7 @@ include _config.jade
             .c6.cm12.g
               address <strong>Torre de consultorios Infinito</strong> <span>Piso 11, Consultorio 1102</span> Av. Prol. Vasco de Quiroga, No. 4299, Col. Lomas de Santa Fe, Cuajumalpa, Ciudad de México, Frente a Centro Médico ABC Santa Fe.
               div.consulta
-                p: strong Horarios de consulta
+                p: strong Nuestros horarios
                 p Nuestros horario de atención es Lunes a Viernes de 09:00 a 19:00 hrs. y Sábado de 09:00 a 13:00 hrs.
                 .tel Teléfonos:
                 p

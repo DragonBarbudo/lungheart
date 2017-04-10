@@ -58,8 +58,14 @@ mixin linkTo(text, link)
 
 mixin card(bgimg, dr, especialidad)
   a.card(href="#", style="background-image: url(#{bgimg})").c4.cm6.g
-    .container.bottom.center
+    .container.bottom.center.front
       .c12.g
         h3 #{dr}
         hr
         p #{especialidad}
+    .container.middle.center.back
+      .c12.g
+        h3 Especialista en:
+        if block
+          block
+        

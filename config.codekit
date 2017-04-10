@@ -3,7 +3,7 @@
 "creatorBuild": "19137",
 "files": {
 	"\/_config.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -93,6 +93,39 @@
 		"initialSize": 49424,
 		"inputAbbreviatedPath": "\/app\/img\/cirugia3.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/cirugia3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/dr-alejandro-fernandez.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43785,
+		"inputAbbreviatedPath": "\/app\/img\/dr-alejandro-fernandez.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/dr-alejandro-fernandez.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/dr-miguel-corona-perezgrovas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53043,
+		"inputAbbreviatedPath": "\/app\/img\/dr-miguel-corona-perezgrovas.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/dr-miguel-corona-perezgrovas.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/dr-miguel-martinez-arias.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31873,
+		"inputAbbreviatedPath": "\/app\/img\/dr-miguel-martinez-arias.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/dr-miguel-martinez-arias.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -252,7 +285,7 @@
 		"syntaxCheckerStyle": 0
 		},
 	"\/dw4\/_dw4.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -415,7 +448,7 @@
 		"processed": 0
 		},
 	"\/index.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -614,7 +647,7 @@
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
 	"jadeAutoOutputPathStyle": 0,
-	"jadeCompileDebug": 1,
+	"jadeCompileDebug": 0,
 	"jadeOutputStyle": 1,
 	"javascriptAutoOutputPathEnabled": 0,
 	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
