@@ -188,14 +188,18 @@ section.inner2{
 section#inicio{
   position: relative;
   .bg1{
-    position: absolute; left: 10px; top: 0;
+    position: absolute; left: 0px; top: 0;
     width: 30%; height: 367px;
     background-image: url(img/home-lamp1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1;
+    background-position: -60px -40px;
     @media @tablet{
       background-position: -20px -40px;
+    }
+    @media @mobile{
+      background-position: 10px 0px;
     }
   }
   .bg2{
